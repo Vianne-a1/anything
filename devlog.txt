@@ -1,1 +1,17 @@
-firstL -- TIMESTAMP\n
+TiffanY, JessicaY, ClaireS, JackieZ - 10.24
+
+- Drafted the design document
+
+TiffanyY and JackieZ - 10.27
+
+- Edited design document with feedback from other groups
+
+TiffanyY - 10.28
+
+- Updated database format and added another graph/chart for routes
+- Included Database types 
+
+JackieZ - 10.29
+
+- Started create python file for creating db
+- Started forms.py
