@@ -10,3 +10,8 @@ TiffanyY - 10.28
 
 - Updated database format and added another graph/chart for routes
 - Included Database types 
+
+JackieZ - 10.29
+
+- Started create python file for creating db
+- Started forms.py
