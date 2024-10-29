@@ -9,3 +9,4 @@ TiffanyY and JackieZ - 10.27
 TiffanyY - 10.28
 
 - Updated database format and added another graph/chart for routes
+- Included Database types 
