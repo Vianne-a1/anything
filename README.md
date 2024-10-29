@@ -9,7 +9,10 @@ Jessica Yu
 Jackie Zeng
 
     Description of website/app (a la abstract of a scientific paper... NOT your entire design doc!)
-    Launch codes:
-        How to clone/install.
-        How to run.
 
+Install Guide:
+1. Clone the repository by running "git clone git@github.com:Vianne-a1/anything.git" on the terminal.
+2. Install everything in requirements.txt by running "pip install -r requirements.txt" in the terminal.
+
+Launch Codes:
+1. Run this project by navigating to app the terminal, then running "python3 app.py".
