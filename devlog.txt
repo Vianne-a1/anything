@@ -2,16 +2,24 @@ TiffanY, JessicaY, ClaireS, JackieZ - 10.24
 
 - Drafted the design document
 
-TiffanyY and JackieZ - 10.27
+TiffanyY and JackieZ - 10.27.2024
 
 - Edited design document with feedback from other groups
 
-TiffanyY - 10.28
+TiffanyY - 10.28.2024
 
 - Updated database format and added another graph/chart for routes
 - Included Database types 
 
-JackieZ - 10.29
+JackieZ - 10.29.2024
 
 - Started create python file for creating db
 - Started forms.py
+
+JessicaY - 10.29.2024
+
+- Updated requirements.txt
+
+TiffanyY - 10.29.2024
+
+- Added launch and installation code
