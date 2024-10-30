@@ -52,3 +52,65 @@ def login():
 def logout():
     session.clear()
     return redirect(url_for('home'))
+
+
+@app.route('/create', methods=('GET', 'POST'))
+def create_blog():
+    if 'user_id' not in session:
+        return redirect(url_for('login'))
+    
+    if request.method == 'POST':
+        title = request.form['title']
+        content = request.form['content']
+        
+        conn = get_db_connection()
+        cursor = conn.execute('INSERT INTO blogs (user_id, title, content) VALUES (?, ?, ?)',
+                              (session['user_id'], title, content))
+        conn.commit()
+        
+        # Get the page_id of the newly created blog
+        page_id = cursor.lastrowid
+        conn.close()
+        
+        flash('Blog created successfully!')
+        return redirect(url_for('view_blog', page_id=page_id))
+    
+    return render_template('newPage.html')
+
+@app.route('/page/<int:page_id>')
+def view_blog(page_id):
+    conn = get_db_connection()
+    blog = conn.execute('SELECT * FROM blogs WHERE id = ?', (page_id,)).fetchone()
+    conn.close()
+    
+    if blog is None:
+        flash('Blog not found.')
+        return redirect(url_for('home'))
+    
+    return render_template('blogPage.html', blog=blog)
+
+@app.route('/<int:page_id>/edit', methods=('GET', 'POST'))
+def edit_blog(page_id):
+    if 'user_id' not in session:
+        return redirect(url_for('login'))
+    
+    conn = get_db_connection()
+    blog = conn.execute('SELECT * FROM blogs WHERE id = ? AND user_id = ?', (page_id, session['user_id'])).fetchone()
+    
+    if blog is None:
+        flash('Blog not found or you do not have permission to edit it.')
+        return redirect(url_for('home'))
+    
+    if request.method == 'POST':
+        title = request.form['title']
+        content = request.form['content']
+        
+        conn.execute('UPDATE blogs SET title = ?, content = ? WHERE id = ?', (title, content, page_id))
+        conn.commit()
+        conn.close()
+        
+        flash('Blog updated successfully!')
+        return redirect(url_for('view_blog', page_id=page_id))
+    
+    conn.close()
+    return render_template('editPage.html', blog=blog)
