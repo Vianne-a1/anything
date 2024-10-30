@@ -1,6 +1,6 @@
-Anything__tyang50_csong50_jyu50_jzeng50
+# Anything__tyang50_csong50_jyu50_jzeng50
 
-DUE DATE 11.06.2024
+# DUE DATE 11.06.2024
 
 "wiki" by Team Anything
 
@@ -22,9 +22,9 @@ Your team has been contracted to create a web log hosting site, with the followi
   - View the blogs of other users.
 
     
-Install Guide:
+# Install Guide:
 1. Clone the repository by running "git clone git@github.com:Vianne-a1/anything.git" on the terminal.
 2. Install everything in requirements.txt by running "pip install -r requirements.txt" in the terminal.
 
-Launch Codes:
+# Launch Codes:
 1. Run this project by navigating to app the terminal, then running "python3 app.py".
