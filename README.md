@@ -13,7 +13,7 @@ Jackie Zeng
 Scenario Two: Your team has been contracted to create a web log hosting site, with the following
 features:
     ● Users will have to register to use the site.
-        ● A logged-in user will be able to
+    ● A logged-in user will be able to
     ○ Create a new blog
     ○ Update their blog by adding a new entry
     ○ View and edit their own past entries
