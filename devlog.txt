@@ -31,4 +31,4 @@ JackieZ - 10.30.2024
 
 TiffanyY 10.30.2024
 
-- Started app.py
+- Added create, edit, and view blog
