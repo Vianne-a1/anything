@@ -27,4 +27,4 @@ Your team has been contracted to create a web log hosting site, with the followi
 2. Install everything in requirements.txt by running "pip install -r requirements.txt" in the terminal.
 
 # Launch Codes:
-1. Run this project by navigating to app the terminal, then running "python3 app.py".
+1. Run this project by navigating to app the terminal, then running "python3 ' __init__.py'.
