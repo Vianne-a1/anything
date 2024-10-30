@@ -117,4 +117,6 @@ def edit_blog(page_id):
     
     conn.close()
     return render_template('editPage.html', blog=blog)
-app.run()
+if __name__ == "__main__":
+    app.debug = True
+    app.run()
