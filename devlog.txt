@@ -28,3 +28,7 @@ JackieZ - 10.30.2024
 
 - Finished db maker
 - Wrote signup, login, logout methods in init.py
+
+TiffanyY 10.30.2024
+
+- Started app.py
