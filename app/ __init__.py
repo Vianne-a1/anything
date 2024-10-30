@@ -36,5 +36,14 @@ def login():
         username = request.form['username']
         password = request.form['password']
 
-        
+        conn = get_db_connection()
+        user = conn.execute('SELECT * FROM users WHERE username = ?', (username,)).fetchone()
+        conn.close()
+
+        if user and check_password_hash(user['password_hash'], password):
+            session['user_id'] = user['id']
+            session['username'] = user['username']
+            return redirect(url_for('home'))
+        else:
+            return 'Invalid username or password'
     return render_template('login.html')
