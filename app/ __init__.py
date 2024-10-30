@@ -29,3 +29,12 @@ def signup():
             conn.close()
         return redirect(url_for('login'))
     return render_template('signup.html')
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+
+        
+    return render_template('login.html')
