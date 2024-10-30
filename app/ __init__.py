@@ -3,7 +3,9 @@ import sqlite3
 import os
 from werkzeug.security import generate_password_hash, check_password_hash
 from build_db import setup_database
-app.secret_key = os.random(64)
+app = Flask(__name__)           #create instance of class Flask
+
+app.secret_key = os.urandom(64)
 def get_db_connection():
     conn = sqlite3.connect('blog.db')
     conn.row_factory = sqlite3.Row
