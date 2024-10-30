@@ -24,6 +24,10 @@ TiffanyY - 10.29.2024
 
 - Added launch and installation code
 
+ClaireS - 10.29.2024
+
+- Wrote the launch codes and install guide in readme
+
 JackieZ - 10.30.2024
 
 - Finished db maker
