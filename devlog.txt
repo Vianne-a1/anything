@@ -31,4 +31,5 @@ JackieZ - 10.30.2024
 
 TiffanyY 10.30.2024
 
-- Added create, edit, and view blog
+- Added create, edit, and view blog in __init_.py
+- Updated README.md with due date and actual project description
