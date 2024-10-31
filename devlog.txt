@@ -2,40 +2,40 @@ Team Anything -- 10.24
 
 - Drafted the design document
 
-TiffanyY and JackieZ -- 10.27.2024
+tiffanyY and jackieZ -- 10.27.2024
 
 - Edited design document with feedback from other groups
 
-TiffanyY -- 10.28.2024
+tiffanyY -- 10.28.2024
 
 - Updated database format and added another graph/chart for routes
 - Included Database types 
 
-JackieZ -- 10.29.2024
+jackieZ -- 10.29.2024
 
 - Started create python file for creating db
 - Started forms.py
 
-JessicaY -- 10.29.2024
+jessicaY -- 10.29.2024
 
 - Updated requirements.txt
 
-TiffanyY -- 10.29.2024
+tiffanyY -- 10.29.2024
 
 - Added launch and installation code
 
-ClaireS -- 10.29.2024
+claireS -- 10.29.2024
 
 - Wrote the launch codes and install guide in readme
 
-JackieZ -- 10.30.2024
+jackieZ -- 10.30.2024
 
 - Finished db maker
 - Wrote signup, login, logout methods in init.py
 - Fix missing app.run()
 - Fixed minor errors, missing app= , and using os.random instead of os.urandom
 
-TiffanyY -- 10.30.2024
+tiffanyY -- 10.30.2024
 
 - Added create, edit, and view blog in __init_.py
 - Updated README.md with due date and actual project description
@@ -47,3 +47,7 @@ devlog entry summarizing external readme review:
 The install/launch instructions did their job but it could've been a lot more clear and specific. Our reviewer had some difficulty due to occassionally missing a step (like cd-ing into the folder/directory). 
 
 Other groups were much more thorough with their readme and install/launch instructions. Most had much more specific intructions that consisted of listed and ordered information on how to install or launch. Some groups had commands in code blocks, something that would've made the installation/launch process much more convienent. There were a few groups who gave more general instructions that could be applied to other repositories and not limited to this specific project. 
+
+tiffanyY -- 10.31.2024
+
+- Updated readme.md to better comply with written standards
