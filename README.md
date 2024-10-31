@@ -1,10 +1,14 @@
 # Anything__tyang50_csong50_jyu50_jzeng50
 
 # Roster with roles
-Tiffany Yang : Project Manager, DB + py \n
-Claire Song, HTML/CSS\n
-Jessica Yu, HTML/CSS\n
-Jackie Zeng, DB + py\n
+Tiffany Yang : Project Manager, DB + py 
+
+Claire Song, HTML/CSS
+
+Jessica Yu, HTML/CSS
+
+Jackie Zeng, DB + py
+
 
 # Description of website -- Scenario Two: Web Log Hosting Site (DUE DATE 11.06.2024)
 
