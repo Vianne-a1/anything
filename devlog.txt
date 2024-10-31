@@ -51,3 +51,6 @@ Other groups were much more thorough with their readme and install/launch instru
 tiffanyY -- 10.31.2024
 
 - Updated readme.md to better comply with written standards
+- Made html placeholder files
+- Reordered/reformatted some files 
+- Ensured that the app (__init__.py) worked properly and site was accessible
