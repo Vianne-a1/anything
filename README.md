@@ -25,15 +25,15 @@ Your team has been contracted to create a web log hosting site, with the followi
 
 # Install Guide:
 
-1. Clone the repository by running "git clone git@github.com:Vianne-a1/anything.git" in the terminal.
-2. Enter the terminal by running "cd anything" in the terminal.
-3. Install everything in requirements.txt by running "pip install -r requirements.txt" in the terminal.
+1. Clone the repository by running `git clone git@github.com:Vianne-a1/anything.git` in the terminal.
+2. Enter the terminal by running `cd anything` in the terminal.
+3. Install everything in requirements.txt by running `pip install -r requirements.txt` in the terminal.
 
 Or
 
 1. Download the zip file and extract it to folder.
-2. Launch the terminal and and navigate to the extracted files by running "cd anything" in ther terminal.
-3. Run "pip install -r requirements.txt" in the terminal.
+2. Launch the terminal and and navigate to the extracted files by running `cd anything` in ther terminal.
+3. Run `pip install -r requirements.txt` in the terminal.
 
 Launch Codes:
 
@@ -47,5 +47,8 @@ Make a python virtual environment
 
     4. Run $ deactivate to deactivate the virtual environment
 
-1. Run this project by navigating to /app on the terminal, then running "python3 ' __init__.py'.
-2. Head to "http://127.0.0.1:5000" to view site.
+1. Run this project by running `cd anything`
+   - If requirements are not installed yet, run `pip install -r requirements.txt`
+2. Run `cd/app`
+3. Run "python3 ' __init__.py'.
+4. Head to "http://127.0.0.1:5000" to view site.
