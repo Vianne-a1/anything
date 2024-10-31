@@ -1,4 +1,4 @@
-TiffanY, JessicaY, ClaireS, JackieZ - 10.24
+Team Anything - 10.24
 
 - Drafted the design document
 
@@ -39,3 +39,9 @@ TiffanyY 10.30.2024
 
 - Added create, edit, and view blog in __init_.py
 - Updated README.md with due date and actual project description
+
+Team Anything 10.30.2024
+
+devlog entry summarizing external readme review:
+
+Other groups were much more thorough with their readme and install/launch instructions. Most had much more specific intructions that consisted of listed and ordered information on how to install or launch. Some groups had commands in code blocks, something that would've made the installation/launch process much more convienent. There were a few groups who gave more general instructions that could be applied to other repositories and not limited to this specific project. 
