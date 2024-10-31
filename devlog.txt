@@ -44,4 +44,6 @@ Team Anything 10.30.2024
 
 devlog entry summarizing external readme review:
 
+The install/launch instructions did their job but it could've been a lot more clear and specific. Our reviewer had some difficulty due to occassionally missing a step (like cd-ing into the folder/directory). 
+
 Other groups were much more thorough with their readme and install/launch instructions. Most had much more specific intructions that consisted of listed and ordered information on how to install or launch. Some groups had commands in code blocks, something that would've made the installation/launch process much more convienent. There were a few groups who gave more general instructions that could be applied to other repositories and not limited to this specific project. 
