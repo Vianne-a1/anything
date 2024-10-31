@@ -50,5 +50,5 @@ Make a python virtual environment
 1. Run this project by running `cd anything`
    - If requirements are not installed yet, run `pip install -r requirements.txt`
 2. Run `cd/app`
-3. Run "python3 ' __init__.py'.
+3. Run `python3 ' __init__.py'`.
 4. Head to "http://127.0.0.1:5000" to view site.
