@@ -25,13 +25,15 @@ Your team has been contracted to create a web log hosting site, with the followi
 
 # Install Guide:
 
-1. Clone the repository by running "git clone git@github.com:Vianne-a1/anything.git" on the terminal.
-2. Install everything in requirements.txt by running "pip install -r requirements.txt" in the terminal.
+1. Clone the repository by running "git clone git@github.com:Vianne-a1/anything.git" in the terminal.
+2. Enter the terminal by running "cd anything" in the terminal.
+3. Install everything in requirements.txt by running "pip install -r requirements.txt" in the terminal.
 
 Or
 
 1. Download the zip file and extract it to folder.
-2. Launch the terminal and and navigate to the extracted files and run "pip install -r requirements.txt".
+2. Launch the terminal and and navigate to the extracted files by running "cd anything" in ther terminal.
+3. Run "pip install -r requirements.txt" in the terminal.
 
 Launch Codes:
 
