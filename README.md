@@ -4,13 +4,13 @@
 
 "wiki" by Team Anything
 
-(Other roles unassigned)
-Project Manager: Tiffany Yang 
-Claire Song
-Jessica Yu
-Jackie Zeng
+# Roster with roles
+Tiffany Yang : Project Manager, DB + py
+Claire Song, HTML/CSS
+Jessica Yu, HTML/CSS
+Jackie Zeng, DB + py
 
-# Scenario Two: Web Log Hosting Site
+# Description of website -- Scenario Two: Web Log Hosting Site
 
 Your team has been contracted to create a web log hosting site, with the following features:
 
