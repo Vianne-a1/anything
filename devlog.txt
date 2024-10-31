@@ -54,3 +54,4 @@ tiffanyY -- 10.31.2024
 - Made html placeholder files
 - Reordered/reformatted some files 
 - Ensured that the app (__init__.py) worked properly and site was accessible
+- Added a temporary style.css (It's from annual CS sem 2 from intro to HTML/CSS - Duck site)
