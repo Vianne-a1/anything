@@ -1,46 +1,46 @@
-Team Anything - 10.24
+Team Anything -- 10.24
 
 - Drafted the design document
 
-TiffanyY and JackieZ - 10.27.2024
+TiffanyY and JackieZ -- 10.27.2024
 
 - Edited design document with feedback from other groups
 
-TiffanyY - 10.28.2024
+TiffanyY -- 10.28.2024
 
 - Updated database format and added another graph/chart for routes
 - Included Database types 
 
-JackieZ - 10.29.2024
+JackieZ -- 10.29.2024
 
 - Started create python file for creating db
 - Started forms.py
 
-JessicaY - 10.29.2024
+JessicaY -- 10.29.2024
 
 - Updated requirements.txt
 
-TiffanyY - 10.29.2024
+TiffanyY -- 10.29.2024
 
 - Added launch and installation code
 
-ClaireS - 10.29.2024
+ClaireS -- 10.29.2024
 
 - Wrote the launch codes and install guide in readme
 
-JackieZ - 10.30.2024
+JackieZ -- 10.30.2024
 
 - Finished db maker
 - Wrote signup, login, logout methods in init.py
 - Fix missing app.run()
 - Fixed minor errors, missing app= , and using os.random instead of os.urandom
 
-TiffanyY 10.30.2024
+TiffanyY -- 10.30.2024
 
 - Added create, edit, and view blog in __init_.py
 - Updated README.md with due date and actual project description
 
-Team Anything 10.30.2024
+Team Anything -- 10.30.2024
 
 devlog entry summarizing external readme review:
 
