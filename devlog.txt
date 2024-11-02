@@ -9,7 +9,7 @@ tiffanyY and jackieZ -- 10.27.2024
 tiffanyY -- 10.28.2024
 
 - Updated database format and added another graph/chart for routes
-- Included Database types 
+- Included Database types
 
 jackieZ -- 10.29.2024
 
@@ -44,14 +44,21 @@ Team Anything -- 10.30.2024
 
 devlog entry summarizing external readme review:
 
-The install/launch instructions did their job but it could've been a lot more clear and specific. Our reviewer had some difficulty due to occassionally missing a step (like cd-ing into the folder/directory). 
+The install/launch instructions did their job but it could've been a lot more clear and specific. Our reviewer had some difficulty due to occassionally missing a step (like cd-ing into the folder/directory).
 
-Other groups were much more thorough with their readme and install/launch instructions. Most had much more specific intructions that consisted of listed and ordered information on how to install or launch. Some groups had commands in code blocks, something that would've made the installation/launch process much more convienent. There were a few groups who gave more general instructions that could be applied to other repositories and not limited to this specific project. 
+Other groups were much more thorough with their readme and install/launch instructions. Most had much more specific intructions that consisted of listed and ordered information on how to install or launch. Some groups had commands in code blocks, something that would've made the installation/launch process much more convienent. There were a few groups who gave more general instructions that could be applied to other repositories and not limited to this specific project.
+
+jessicaY -- 10.31.2024
+- Updated readme.me based on notes from emissary visit
 
 tiffanyY -- 10.31.2024
 
 - Updated readme.md to better comply with written standards
 - Made html placeholder files
-- Reordered/reformatted some files 
+- Reordered/reformatted some files
 - Ensured that the app (__init__.py) worked properly and site was accessible
 - Added a temporary style.css (It's from annual CS sem 2 from intro to HTML/CSS - Duck site)
+
+jessicaY -- 11.2.2024
+-- worked on home.html
+-- finished login.html and signup.html(?)
