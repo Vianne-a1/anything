@@ -45,3 +45,39 @@ div.return {
   color: white;
   /* Change text color for hover effect */
 }
+
+.button {
+    padding: 10px 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+.button1 {
+    padding: 10px 40px;
+    font-size: 20px;
+    margin-right: 250px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    /* Evenly space buttons */
+    background-color: #f8f8f8;
+    /* Light background for navbar */
+    padding: 10px 0;
+    /* Add some vertical padding */
+    border-bottom: 2px solid #ccc;
+    /* Border for the bottom of the navbar */
+}
+
+.navbar form {
+    flex-grow: 1;
+    /* Allow forms to grow and fill space */
+    text-align: center;
+    /* Center align text in buttons */
+}
