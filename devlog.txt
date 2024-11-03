@@ -77,6 +77,7 @@ tiffanyY -- 11.3.2024
 - Added a few python scripts to '__init__.py' so that the above works
 - Added a new home page message if already logged in
 - Updated readme with a missing launch step
+- Site now fully functional
 
 jessicaY -- 11.3.2024
 - edited signup and login (html and css files) to make each page consistent
