@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <h1>My Blog</h1>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+            <li><a href="{{ url_for('list_users') }}">Users</a></li>
+            <li><a href="{{ url_for('my_pages') }}">My Pages</a></li>
+            <li><a href="{{ url_for('create_blog') }}">New Page</a></li>
+            {% if session.get('username') %}
+            <li><a href="{{ url_for('logout') }}">Logout</a></li>
+            {% else %}
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+</header>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Blog{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>My Pages</title>
+</head>
+
+<body>
+    <h1>My Pages</h1>
+    <a href="{{ url_for('create_blog') }}">New Page</a>
+    <ul>
+        {% for page in pages %}
+        <li>
+            <a href="{{ url_for('view_blog', page_id=page.id) }}">{{ page.title }}</a>
+        </li>
+        {% else %}
+        <li>No pages found.</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('home') }}">Back to Home</a>
+</body>
+
+</html>
