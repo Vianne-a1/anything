@@ -6,24 +6,26 @@
     <link rel="stylesheet" href={{ style }}>
     <style>
         h1 {
-          font-weight: bold;
-          font-size: 75px;
-          text-align: center;
-        }
-        hr {
-          height: 2px;
-        }
-        div.middle {
-          text-align: center;
-          font-size: 30px;
-        }
-        div.bottom {
-          margin-top: 150px;
-          text-align: center;
-          font-size: 30px;
+            font-weight: bold;
+            font-size: 75px;
+            text-align: center;
         }
 
-      </style>
+        hr {
+            height: 2px;
+        }
+
+        div.middle {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        div.bottom {
+            margin-top: 150px;
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
 </head>
 
 <body>
@@ -32,7 +34,7 @@
     </header>
     <hr>
     <div class="middle">
-        <form action="home.html">
+        <form action="/">
             <button type="submit" class="button">Home</button>
         </form>
         <form action="users.html">
@@ -41,21 +43,22 @@
         <form action="mypages.html">
             <button type="submit" class="button">My Pages</button>
         </form>
-        <form action="login.html">
+        <form action="/login">
             <button type="submit" class="button">Log Out</button>
         </form>
     </div>
     <hr>
     <div class="bottom">
         <h2>Click here to Log in/Sign up!</h2>
-        <form action="login.html">
+        <form action="/login">
             <button type="submit" class="button">Log in</button>
         </form>
-        <form action="signup.html">
+        <form action="/signup">
             <button type="submit" class="button">Sign Up</button>
         </form>
     </div>
     <br><br><br><br>
     <hr>
 </body>
+
 </html>
