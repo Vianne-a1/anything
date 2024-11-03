@@ -6,7 +6,7 @@ from build_db import setup_database
 
 app = Flask(__name__)  # Create instance of class Flask
 
-app.secret_key = os.urandom(64)
+app.secret_key = os.urandom(24)
 
 
 def get_db_connection():
@@ -17,6 +17,8 @@ def get_db_connection():
 
 @app.route('/')
 def home():
+    conn = get_db_connection()
+    blogs = conn.execute('SELECT * FROM blogs').fetchall()
     username = session.get('username')  # Get the username from the session, if available
     return render_template('home.html', username=username)
 
