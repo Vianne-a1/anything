@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Log In - Wiki by Team Anything</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
 </head>
+
 <body>
   <header>
     <h1>Wiki By Team Anything</h1>
   </header>
   <nav class="navbar">
-    <form action="/">
-      <button type="submit" class="button1">Home</button>
-    </form>
-    <form action="/users">
-      <button type="submit" class="button1">Users</button>
-    </form>
-    <form action="/mypages">
-      <button type="submit" class="button1">My Pages</button>
-    </form>
-    {% if session.get('username') %}
-      <form action="/logout">
-        <button type="submit" class="button">Log Out</button>
+      <form action="/">
+          <button type="submit" class="button1">Home</button>
       </form>
-    {% endif %}
+      <form action="/users">
+          <button type="submit" class="button1">Users</button>
+      </form>
+      <form action="/mypages">
+          <button type="submit" class="button1">My Pages</button>
+      </form>
+      <form action="/logout">
+          <button type="submit" class="button">Log Out</button>
+      </form>
   </nav>
   <hr>
   <div class="login">
@@ -44,4 +44,13 @@
     </form>
     <br>
   </div>
+  <br>
   <hr>
+  <div class="return">
+    <form action="/">
+      <button type="submit">Return Home</button>
+    </form>
+  </div>
+</body>
+
+</html>

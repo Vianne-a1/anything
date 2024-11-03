@@ -1,44 +1,43 @@
 <!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="../css/blogPage.css">
-</head>
-<body bgcolor="#D9D9D9">
-<div class="top">
-  <h1>Wiki by Team Anything</h1>
-</div>
-<div class="navbar">
-  <form action="/">
-    <button type="submit" class="button">Home</button>
-  </form>
-  <form action="/users">
-    <button type="submit" class="button">Users</button>
-  </form>
-  <form action="/mypages">
-    <button type="submit" class="button">My Pages</button>
-  </form>
-  {% if session.get('username') %}
+<html lang="en">
+<header>
+  <h1>My Blog</h1>
+
+  <nav class="navbar">
+    <form action="/">
+      <button type="submit" class="button1">Home</button>
+    </form>
+    <form action="/users">
+      <button type="submit" class="button1">Users</button>
+    </form>
+    <form action="/mypages">
+      <button type="submit" class="button1">My Pages</button>
+    </form>
     <form action="/logout">
       <button type="submit" class="button">Log Out</button>
     </form>
-  {% else %}
-    <form action="/login">
-      <button type="submit" class="button">Log In</button>
-    </form>
-  {% endif %}
-</div>
-<div class="heading">
-  <h2>Blog: {{ blog['title'] }}</h2>
-  <h3>By: {{ blog['username'] if blog['username'] else 'Unknown Author' }}</h3>
-  {% if session['username'] == blog['author'] %}
-    <form action="/{{ blog['id'] }}/edit">
-      <button type="submit" class="button">Edit this blog</button>
-    </form>
-  {% endif %}
-</div>
-<hr width="100%" size="2">
-<div class="content">
+  </nav>
+</header>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In - Wiki by Team Anything</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/blogPage.css') }}">
+
+  <title>{{ blog['title'] }}</title>
+</head>
+
+<body>
+  <h1>{{ blog['title'] }}</h1>
   <p>{{ blog['content'] }}</p>
-</div>
+  <br>
+  <form action="{{ url_for('edit_blog', page_id=blog['id']) }}">
+    <button type="submit">Edit Blog</button>
+  </form>
 </body>
+
 </html>

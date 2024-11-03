@@ -1,45 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wiki by Team Anything</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki by Team Anything</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
 </head>
+
 <body>
-  <header>
-    <h1>Wiki by Team Anything</h1>
-  </header>
-  <nav class="navbar">
-    <form action="/">
-      <button type="submit" class="button1">Home</button>
-    </form>
-    <form action="/users">
-      <button type="submit" class="button1">Users</button>
-    </form>
-    <form action="/mypages">
-      <button type="submit" class="button1">My Pages</button>
-    </form>
-    {% if session.get('username') %}
-      <form action="/logout">
-        <button type="submit" class="button">Log Out</button>
-      </form>
-    {% else %}
-      <form action="/login">
-        <button type="submit" class="button2">Log in</button>
-      </form>
-      <form action="/signup">
-        <button type="submit" class="button3">Sign Up</button>
-      </form>
-    {% endif %}
-  </nav>
-  <hr>
-  {% if username %}
+    <header>
+        <h1>Wiki by Team Anything</h1>
+    </header>
+
+    <nav class="navbar">
+        <form action="/">
+            <button type="submit" class="button1">Home</button>
+        </form>
+        <form action="/users">
+            <button type="submit" class="button1">Users</button>
+        </form>
+        <form action="/mypages">
+            <button type="submit" class="button1">My Pages</button>
+        </form>
+        <form action="/logout">
+            <button type="submit" class="button">Log Out</button>
+        </form>
+    </nav>
+
+    <hr>
+
+    {% if username %}
     <h2>Welcome back, {{ username }}!</h2>
-  {% else %}
+    {% else %}
     <h2>Click here to Log in/Sign up!</h2>
-  {% endif %}
-  <br><br><br><br>
-  <hr>
+    <div class="bottom">
+        <form action="/login">
+            <button type="submit" class="button2">Log in</button>
+        </form>
+        <form action="/signup">
+            <button type="submit" class="button3">Sign Up</button>
+        </form>
+    </div>
+    {% endif %}
+
+
+    <br><br><br><br>
+    <hr>
 </body>
+
 </html>
