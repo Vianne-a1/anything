@@ -69,3 +69,8 @@ tiffanyY -- 11.2.2024
 
 claireS -- 11.2.2024
 - worked on newpage.html, editpage.html, and blogpage.html
+
+tiffayY -- 11.3.2024
+- Added user.html and my_pages.html
+- Fixed a few other HTML files (signup, login, my page, create_new works)
+- Edited a few CSS files to make design consistent
