@@ -74,3 +74,5 @@ tiffayY -- 11.3.2024
 - Added user.html and my_pages.html
 - Fixed a few other HTML files (signup, login, my page, create_new works)
 - Edited a few CSS files to make design consistent
+- Added a few python scripts to '__init__.py' so that the above works
+- Added a new home page message if already logged in
