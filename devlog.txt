@@ -62,3 +62,9 @@ tiffanyY -- 10.31.2024
 jessicaY -- 11.2.2024
 -- worked on home.html
 -- finished login.html and signup.html(?)
+
+tiffanyY -- 11.2.2024
+- tested new html and edited as necessary 
+
+claireS -- 11.2.2024
+- worked on newpage.html, editpage.html, and blogpage.html
