@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In - Wiki by Team Anything</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+</head>
+
+<body>
+  <header>
+    <h1>Wiki By Team Anything</h1>
+  </header>
+  <nav class="navbar">
+    <form action="/">
+      <button type="submit" class="button1">Home</button>
+    </form>
+    <form action="/users">
+      <button type="submit" class="button1">Users</button>
+    </form>
+    <form action="/mypages">
+      <button type="submit" class="button1">My Pages</button>
+    </form>
+    <form action="/logout">
+      <button type="submit" class="button">Log Out</button>
+    </form>
+  </nav>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Blog{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>Users</title>
+  </head>
+  <h2>Pages by User</h2>
+
+  <body <ul>
+    {% for page in pages %}
+    <li><a href="{{ url_for('view_blog', page_id=page.id) }}">{{ page.title }}</a></li>
+    {% else %}
+    <li>No pages found for this user.</li>
+    {% endfor %}
+    </ul>
+  </body>
+
+</html>
