@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<header>
-  <h1>My Blog</h1>
-
-  <nav class="navbar">
-    <form action="/">
-      <button type="submit" class="button1">Home</button>
-    </form>
-    <form action="/users">
-      <button type="submit" class="button1">Users</button>
-    </form>
-    <form action="/mypages">
-      <button type="submit" class="button1">My Pages</button>
-    </form>
-    <form action="/logout">
-      <button type="submit" class="button">Log Out</button>
-    </form>
-  </nav>
-</header>
-
-<!DOCTYPE html>
-<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Log In - Wiki by Team Anything</title>
+  <title>{{ blog['title'] }} - Wiki by Team Anything</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/blogPage.css') }}">
-
-  <title>{{ blog['title'] }}</title>
 </head>
 
 <body>
-  <h1>{{ blog['title'] }}</h1>
-  <p>{{ blog['content'] }}</p>
-  <br>
-  <form action="{{ url_for('edit_blog', page_id=blog['id']) }}">
-    <button type="submit">Edit Blog</button>
-  </form>
+  <header>
+    <h1>My Blog</h1>
+    <nav class="navbar">
+      <form action="/">
+        <button type="submit" class="button1">Home</button>
+      </form>
+      <form action="/users">
+        <button type="submit" class="button1">Users</button>
+      </form>
+      <form action="/mypages">
+        <button type="submit" class="button1">My Pages</button>
+      </form>
+      <form action="/logout">
+        <button type="submit" class="button">Log Out</button>
+      </form>
+    </nav>
+  </header>
+
+  <main>
+    <h1>{{ blog['title'] }}</h1>
+    <p><strong>Author:</strong> {{ blog['username'] }}</p> <!-- Display author's username -->
+    <p>{{ blog['content'] }}</p>
+    <br>
+    <form action="{{ url_for('edit_blog', page_id=blog['id']) }}">
+      <button type="submit">Edit Blog</button>
+    </form>
+  </main>
 </body>
 
 </html>
