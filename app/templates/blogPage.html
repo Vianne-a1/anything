@@ -29,8 +29,8 @@
 </div>
 <div class="heading">
   <h2>Blog: {{ blog['title'] }}</h2>
-  <h3>By: {{ blog['username'] }}</h3>
-  {% if session['username'] == blog['username'] %}
+  <h3>By: {{ blog['username'] if blog['username'] else 'Unknown Author' }}</h3>
+  {% if session['username'] == blog['author'] %}
     <form action="/{{ blog['id'] }}/edit">
       <button type="submit" class="button">Edit this blog</button>
     </form>
