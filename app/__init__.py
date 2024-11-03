@@ -81,7 +81,8 @@ def create_blog():
         content = request.form['content']
 
         conn = get_db_connection()
-        cursor = conn.execute(
+        cursor = conn.cursor()  # Get the cursor from the connection
+        cursor.execute(
             'INSERT INTO blogs (user_id, title, content) VALUES (?, ?, ?)',
             (session['user_id'], title, content))
         conn.commit()
@@ -90,23 +91,22 @@ def create_blog():
         page_id = cursor.lastrowid
         conn.close()
 
-        flash('Blog created successfully!')  # This line will now work
+        flash('Blog created successfully!')
         return redirect(url_for('view_blog', page_id=page_id))
+
 
     return render_template('newPage.html')
 
 
-@app.route('/page/<int:page_id>')
+@app.route('/view_blog/<int:page_id>')
 def view_blog(page_id):
     conn = get_db_connection()
-    blog = conn.execute('SELECT * FROM blogs WHERE id = ?',
-                        (page_id, )).fetchone()
+    blog = conn.execute('SELECT * FROM blogs WHERE id = ?', (page_id,)).fetchone()
     conn.close()
 
     if blog is None:
         flash('Blog not found.')
-        return redirect(url_for('home'))
-
+        return redirect(url_for('home'))     
     return render_template('blogPage.html', blog=blog)
 
 

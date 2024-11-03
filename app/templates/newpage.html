@@ -1,49 +1,43 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-<link rel="stylesheet" href="../css/newpage.css">
+  <link rel="stylesheet" href="../css/newpage.css">
 </head>
-
 <body bgcolor="#D9D9D9">
-<div class="top">
-  <h1>Wiki by Team Anything</h1>
-</div>
-
-<div class="navbar">
-  <form action="/">
-    <button type="submit" class="button">Home</button>
-  </form>
-  <form action="users.html">
-    <button type="submit" class="button">Users</button>
-  </form>
-  <form action="mypages.html">
-    <button type="submit" class="button">My Pages</button>
-  </form>
-  {% if loggedIn==False %}
-    <form action="/login">
-      <button type="submit" class="button">Log In</button>
+  <div class="top">
+    <h1>Wiki by Team Anything</h1>
+  </div>
+  <div class="navbar">
+    <form action="/">
+      <button type="submit" class="button">Home</button>
     </form>
-  {% else %}
-    <form action="/logout">
-      <button type="submit" class="button">Log Out</button>
+    <form action="/users">
+      <button type="submit" class="button">Users</button>
     </form>
-  {% endif %}
-
-</div>
-
-<div class="heading">
-  <h2>Make a New Blog Here: </h2>
-  <form action="/page/{{page_id}}">
-    Title:
-    <textarea name="title" rows="1" cols="50"></textarea>
-    <br><br>
-    Text:
-    <textarea name="contents" rows="50" cols="50"></textarea>
-    <br><br>
-    <input type="submit" value="Submit">
-  </form>
-</div>
+    <form action="/mypages">
+      <button type="submit" class="button">My Pages</button>
+    </form>
+    {% if session.get('username') %}
+      <form action="/logout">
+        <button type="submit" class="button">Log Out</button>
+      </form>
+    {% else %}
+      <form action="/login">
+        <button type="submit" class="button">Log In</button>
+      </form>
+    {% endif %}
+  </div>
+  <div class="heading">
+    <h2>Make a New Blog Here: </h2>
+    <form action="/create" method="post">
+      Title:
+      <textarea name="title" rows="1" cols="50"></textarea>
+      <br><br>
+      Text:
+      <textarea name="content" rows="50" cols="50"></textarea>
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
 </body>
-
 </html>

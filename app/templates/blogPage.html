@@ -1,51 +1,44 @@
 <!DOCTYPE html>
-
+<html>
 <head>
 <link rel="stylesheet" href="../css/blogPage.css">
 </head>
-
 <body bgcolor="#D9D9D9">
 <div class="top">
   <h1>Wiki by Team Anything</h1>
 </div>
-
 <div class="navbar">
   <form action="/">
     <button type="submit" class="button">Home</button>
   </form>
-  <form action="users.html">
+  <form action="/users">
     <button type="submit" class="button">Users</button>
   </form>
-  <form action="mypages.html">
+  <form action="/mypages">
     <button type="submit" class="button">My Pages</button>
   </form>
-  {% if loggedIn==False %}
-    <form action="/login">
-      <button type="submit" class="button">Log In</button>
-    </form>
-  {% else %}
+  {% if session.get('username') %}
     <form action="/logout">
       <button type="submit" class="button">Log Out</button>
     </form>
+  {% else %}
+    <form action="/login">
+      <button type="submit" class="button">Log In</button>
+    </form>
   {% endif %}
-
 </div>
-
 <div class="heading">
-  <h2>Blog: {{title}}</h2>
-  <h3>By: {{author}}</h3>
-  {% if {{username}} == {{author}} %}
-    <form action="/{{page_id}}/edit">
+  <h2>Blog: {{ blog['title'] }}</h2>
+  <h3>By: {{ blog['username'] }}</h3>
+  {% if session['username'] == blog['username'] %}
+    <form action="/{{ blog['id'] }}/edit">
       <button type="submit" class="button">Edit this blog</button>
     </form>
+  {% endif %}
 </div>
-
 <hr width="100%" size="2">
-
 <div class="content">
-  <p>{{blog}}</p>
+  <p>{{ blog['content'] }}</p>
 </div>
-
 </body>
-
 </html>
