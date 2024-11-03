@@ -81,3 +81,9 @@ tiffanyY -- 11.3.2024
 jessicaY -- 11.3.2024
 - edited signup and login (html and css files) to make each page consistent
 - created my_pages.css and users.css
+
+jackieZ -- 11.3.2024
+- updated home route in '__init__.py'
+- fix create page leading to page not found
+- updated html files for separate login/signin 
+- fixed author not showing in blog page after blog is created
