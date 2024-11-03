@@ -3,38 +3,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href={{ style }}>
-    <style>
-      h1 {
-        font-weight: bold;
-        font-size: 75px;
-        text-align: center;
-      }
-      hr {
-        height: 2px;
-      }
-      h2 {
-        font-size: 35px;
-        text-align: center;
-      }
-      h3 {
-        font-size:33px;
-        text-align: center;
-      }
-      div.input {
-        text-align: center;
-        margin-top: 75px;
-        font-size: 30px;
-      }
-      div.return {
-        font-weight: normal;
-        margin-top: 200px;
-      }
-      .b {
-        height: 40px;
-        width: 70px;
-      }
-    </style>
+    <link rel="stylesheet" href={{"../css/signup.css"}}>
 </head>
 
 <body>
@@ -48,24 +17,23 @@
     <hr>
     <div class="input">
       <h3>Welcome!</h3>
-      <form action="/auth" method="POST">
-        Username:
-        <input type="text" name="username">
+      <form action="{{url_for('signup')}}" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
         <br></br>
-        Password:
-        <input type="text" name="password">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br></br>
+        <button type="submit" class="b">Sign Up</button>
       </form>
       <br></br>
-      <a href="http://127.0.0.1:5000/">
-        <button class="b">Sign Up</button>
-      </a>
     </div>
     <br></br>
     <hr>
     <div class="return">
-      <h4>Click here to return home!</h4>
-      <a href="http://127.0.0.1:5000/">
-        <button>Return Home</button>
+      <form action="/">
+        <button type="submit">Return Home</button>
+      </form>
     </div>
 </body>
 
