@@ -70,15 +70,6 @@ tiffanyY -- 11.2.2024
 claireS -- 11.2.2024
 - worked on newpage.html, editpage.html, and blogpage.html
 
-tiffanyY -- 11.3.2024
-- Added user.html and my_pages.html
-- Fixed a few other HTML files (signup, login, my page, create_new works)
-- Edited a few CSS files to make design consistent
-- Added a few python scripts to '__init__.py' so that the above works
-- Added a new home page message if already logged in
-- Updated readme with a missing launch step
-- Site now fully functional
-
 jessicaY -- 11.3.2024
 - edited signup and login (html and css files) to make each page consistent
 - created my_pages.css and users.css
@@ -88,3 +79,14 @@ jackieZ -- 11.3.2024
 - fix create page leading to page not found
 - updated html files for separate login/signin 
 - fixed author not showing in blog page after blog is created
+
+tiffanyY -- 11.3.2024
+- Added user.html and my_pages.html
+- Fixed a few other HTML files (signup, login, my page, create_new works)
+- Edited a few CSS files to make design consistent
+- Added a few python scripts to '__init__.py' so that the above works
+- Added a new home page message if already logged in
+- Updated readme with a missing launch step
+- Added user_pages.html
+- Site now fully functional
+
