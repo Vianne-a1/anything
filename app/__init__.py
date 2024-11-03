@@ -18,9 +18,10 @@ def get_db_connection():
 @app.route('/')
 def home():
     conn = get_db_connection()
-    blogs = conn.execute('SELECT * FROM blogs').fetchall()
+    #blogs = conn.execute('SELECT * FROM blog').fetchall()
+    conn.close()
     username = session.get('username')  # Get the username from the session, if available
-    return render_template('home.html', blogs=blogs, username=username)
+    return render_template('home.html', username=username)
 
 
 @app.route('/signup', methods=['GET', 'POST'])
