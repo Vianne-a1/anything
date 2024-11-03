@@ -1,0 +1,90 @@
+h1 {
+    font-weight: bold;
+    font-size: 75px;
+    text-align: center;
+}
+
+hr {
+    height: 2px;
+}
+
+div.middle {
+    text-align: center;
+    font-size: 30px;
+}
+
+div.bottom {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    /* Evenly space buttons */
+    background-color: #f8f8f8;
+    /* Light background for navbar */
+    padding: 10px 0;
+    /* Add some vertical padding */
+    border-bottom: 2px solid #ccc;
+    /* Border for the bottom of the navbar */
+}
+
+.navbar form {
+    flex-grow: 1;
+    /* Allow forms to grow and fill space */
+    text-align: center;
+    /* Center align text in buttons */
+}
+
+.button {
+    padding: 10px 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+.button1 {
+    padding: 10px 40px;
+    font-size: 20px;
+    margin-right: 250px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+.button2 {
+    padding: 10px 40px;
+    font-size: 15px;
+    margin-right: 100px;
+    border-radius: 30px;
+    border: normal;
+    background-color: transparent;
+}
+
+.button3 {
+    padding: 10px 40px;
+    font-size: 15px;
+    border-radius: 30px;
+    border: normal;
+    background-color: transparent;
+}
+
+h2 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 40px;
+    margin-top: 150px;
+}
