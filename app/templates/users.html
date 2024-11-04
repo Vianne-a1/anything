@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+<br></br>
 <header>
-    <h1>My Blog</h1>
-
+    Wiki by Team Anything
+</header>
+<br></br>
     <nav class="navbar">
         <form action="/">
             <button type="submit" class="button1">Home</button>
@@ -17,13 +19,17 @@
             <button type="submit" class="button">Log Out</button>
         </form>
     </nav>
-</header>
+
+    <div class="middle">
+      Users
+    </div>
+    <hr>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}My Blog{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>{% block title %}Users{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/users.css') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <title>Users</title>
