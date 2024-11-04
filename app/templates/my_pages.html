@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Pages</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/blogPage.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/my_pages.css') }}">
 </head>
 
-
+<body>
+<br></br>
 <header>
-    <h1>Wiki By Team Anything</h1>
+    Wiki By Team Anything
 </header>
+<br></br>
 <nav class="navbar">
     <form action="/">
         <button type="submit" class="button1">Home</button>
@@ -26,10 +28,12 @@
         <button type="submit" class="button">Log Out</button>
     </form>
 </nav>
-
-<body>
-    <h1>My Pages</h1>
+    <div class="middle">
+        My Blog
+    </div>
+    <hr>
     <a href="{{ url_for('create_blog') }}">New Page</a>
+    <h1>My Pages</h1>
     <ul>
         {% for page in pages %}
         <li>
