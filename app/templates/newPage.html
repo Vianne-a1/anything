@@ -4,14 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Log In - Wiki by Team Anything</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+  <title> Create New Blog</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/newpage.css') }}">
 </head>
 
 <body>
+  <br></br>
   <header>
-    <h1>Wiki By Team Anything</h1>
+    Wiki By Team Anything
   </header>
+  <br></br>
   <nav class="navbar">
     <form action="/">
       <button type="submit" class="button1">Home</button>
@@ -39,6 +41,7 @@
 
   <body>
     <h1>Create a New Blog</h1>
+    <hr>
     <form action="{{ url_for('create_blog') }}" method="post">
       <label for="title">Title:</label>
       <input type="text" id="title" name="title" required>
