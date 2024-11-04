@@ -1,11 +1,29 @@
-h1 {
+header {
     font-weight: bold;
-    font-size: 75px;
+    font-size: 70px;
     text-align: center;
+    font-family: serif;
 }
 
 hr {
     height: 2px;
+}
+
+.button {
+  padding: 10px 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+.button1 {
+  padding: 10px 40px;
+  font-size: 20px;
+  margin-right: 250px;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
 }
 
 .navbar {
@@ -25,4 +43,14 @@ hr {
     /* Allow forms to grow and fill space */
     text-align: center;
     /* Center align text in buttons */
+}
+
+div.middle {
+  text-align: center;
+  font-size: 30px;
+  font-family: serif;
+}
+
+li {
+  font-size: 20px;
 }
