@@ -90,3 +90,6 @@ tiffanyY -- 11.3.2024
 - Added user_pages.html
 - Site now fully functional
 
+jessicaY -- 11.4.2024
+-- updated newpage, user, and mypages (html and css files)
+
