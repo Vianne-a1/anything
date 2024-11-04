@@ -93,3 +93,5 @@ tiffanyY -- 11.3.2024
 jessicaY -- 11.4.2024
 -- updated newpage, user, and mypages (html and css files)
 
+claireS -- 11.4.2024
+- edited mypages and editpage
