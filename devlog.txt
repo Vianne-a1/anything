@@ -95,3 +95,7 @@ jessicaY -- 11.4.2024
 
 claireS -- 11.4.2024
 - edited mypages and editpage
+
+tiffanyY -- 11.4.2024
+- bug tested - 
+    Major issues: If a space is entered in any form fields, the link is unclickable
