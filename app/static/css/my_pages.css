@@ -1,0 +1,60 @@
+header {
+    font-weight: bold;
+    font-size: 72px;
+    text-align: center;
+    font-family: serif;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+hr {
+  height: 0.5px;
+}
+
+.button {
+  padding: 10px 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+.button1 {
+  padding: 10px 40px;
+  font-size: 20px;
+  margin-right: 250px;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    /* Evenly space buttons */
+    background-color: #f8f8f8;
+    /* Light background for navbar */
+    padding: 10px 0;
+    /* Add some vertical padding */
+    border-bottom: 2px solid #ccc;
+    /* Border for the bottom of the navbar */
+}
+
+.navbar form {
+    flex-grow: 1;
+    /* Allow forms to grow and fill space */
+    text-align: center;
+    /* Center align text in buttons */
+}
+
+div.middle {
+  text-align: center;
+  font-size: 30px;
+  font-family: serif;
+}
+
+li {
+  font-size: 20px;
+}
