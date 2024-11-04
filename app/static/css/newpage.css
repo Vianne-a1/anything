@@ -1,11 +1,18 @@
-h1 {
+header {
   font-weight: bold;
-  font-size: 75px;
+  font-size: 72px;
   text-align: center;
+  font-family: serif;
 }
 
 hr {
   height: 2px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: serif;
 }
 
 div.middle {
