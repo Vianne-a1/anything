@@ -106,6 +106,9 @@ jackieZ -- 11.5.2024
 jackieZ --11.6.2024
 - Updated all html templates so that wiki is replaced with blog
 
+tiffanyY -- 11.6.2024
+- Updated some CSS for some consistency, updated design doc
+
 jessicaY -- 11.6.2024
 - updated blogPage.html, editPage.html, login.html, users_pages.html, login.css, and blogPage.css
 - made css more consistent sitewide
