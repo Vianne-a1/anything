@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ blog['title'] }} - Blog by Team Anything</title>
+  <title>{{ blog['title'] }} - Wiki by Team Anything</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/blogPage.css') }}">
 </head>
 
 <body>
   <header>
-    <h1>My Blog</h1>
+    <h1>Wiki by Team Anything</h1>
     <nav class="navbar">
       <form action="/">
         <button type="submit" class="button1">Home</button>
@@ -28,7 +28,8 @@
   </header>
 
   <main>
-    <h1>{{ blog['title'] }}</h1>
+    <h2>{{ blog['title'] }}</h2>
+    <hr>
     <p><strong>Author:</strong> {{ blog['username'] }}</p><!-- Display author's username -->
     <p>{{ blog['content'].replace('\n', '<br>') | safe }}</p>
     <br>
