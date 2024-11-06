@@ -99,3 +99,6 @@ claireS -- 11.4.2024
 tiffanyY -- 11.4.2024
 - bug tested - 
     Major issues: If a space is entered in any form fields, the link is unclickable
+
+jackieZ -- 11.5.2024
+- Updated blogPage.html so it accurately reflects if there should be new line
