@@ -102,3 +102,6 @@ tiffanyY -- 11.4.2024
 
 jackieZ -- 11.5.2024
 - Updated blogPage.html so it accurately reflects if there should be new line
+
+jackieZ --11.6.2024
+- Updated all html templates so that wiki is replaced with blog
