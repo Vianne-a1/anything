@@ -98,3 +98,11 @@ h2 {
 .return {
   text-align: center;
 }
+
+.b {
+  padding: 10px 40px;
+  font-size: 15px;
+  border-radius: 30px;
+  border: normal;
+  background-color: transparent;
+}
