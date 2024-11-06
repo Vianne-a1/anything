@@ -1,43 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <link rel="stylesheet" href="../css/newpage.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Create New Blog</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/newpage.css') }}">
 </head>
-<body bgcolor="#D9D9D9">
-  <div class="top">
-    <h1>Wiki by Team Anything</h1>
-  </div>
-  <div class="navbar">
+
+<body>
+  <br></br>
+  <header>
+    Wiki By Team Anything
+  </header>
+  <br></br>
+  <nav class="navbar">
     <form action="/">
-      <button type="submit" class="button">Home</button>
+      <button type="submit" class="button1">Home</button>
     </form>
     <form action="/users">
-      <button type="submit" class="button">Users</button>
+      <button type="submit" class="button1">Users</button>
     </form>
     <form action="/mypages">
-      <button type="submit" class="button">My Pages</button>
+      <button type="submit" class="button1">My Pages</button>
     </form>
-    {% if session.get('username') %}
-      <form action="/logout">
-        <button type="submit" class="button">Log Out</button>
-      </form>
-    {% else %}
-      <form action="/login">
-        <button type="submit" class="button">Log In</button>
-      </form>
-    {% endif %}
-  </div>
-  <div class="heading">
-    <h2>Make a New Blog Here: </h2>
-    <form action="/create" method="post">
-      Title:
-      <textarea name="title" rows="1" cols="50"></textarea>
-      <br><br>
-      Text:
-      <textarea name="content" rows="50" cols="50"></textarea>
-      <br><br>
-      <input type="submit" value="Submit">
+    <form action="/logout">
+      <button type="submit" class="button">Log Out</button>
     </form>
-  </div>
-</body>
+  </nav>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Blog{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>Create New Page</title>
+  </head>
+
+  <body>
+    <h1>Create a New Blog</h1>
+    <hr>
+    <form action="{{ url_for('create_blog') }}" method="post">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" required>
+      <br><br>
+      <label for="content">Content:</label>
+      <textarea id="content" name="content" rows="10" cols="30" required></textarea>
+      <br><br>
+      <button type="submit">Create Blog</button>
+    </form>
+  </body>
+
 </html>

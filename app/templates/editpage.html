@@ -1,49 +1,51 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
 <head>
-<link rel="stylesheet" href="../css/editpage.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Page - Wiki by Team Anything</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/editpage.css') }}">
 </head>
 
-<body bgcolor="#D9D9D9">
-<div class="top">
-  <h1>Wiki by Team Anything</h1>
-</div>
+<body>
 
-<div class="navbar">
-  <form action="/">
-    <button type="submit" class="button">Home</button>
-  </form>
-  <form action="users.html">
-    <button type="submit" class="button">Users</button>
-  </form>
-  <form action="mypages.html">
-    <button type="submit" class="button">My Pages</button>
-  </form>
-  {% if loggedIn==False %}
+  <div class="top">
+    <h1>Wiki by Team Anything</h1>
+  </div>
+
+  <div class="navbar">
+    <form action="/">
+      <button type="submit" class="button">Home</button>
+    </form>
+    <form action="/users">
+      <button type="submit" class="button">Users</button>
+    </form>
+    <form action="/mypages">
+      <button type="submit" class="button">My Pages</button>
+    </form>
+    {% if loggedIn == False %}
     <form action="/login">
       <button type="submit" class="button">Log In</button>
     </form>
-  {% else %}
+    {% else %}
     <form action="/logout">
       <button type="submit" class="button">Log Out</button>
     </form>
-  {% endif %}
+    {% endif %}
+  </div>
 
-</div>
+  <body>
+      <h1>Edit Blog</h1>
+      <form action="{{ url_for('edit_blog', page_id=blog['id']) }}" method="post">
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" value="{{ blog['title'] }}" required>
+          <br><br>
+          <label for="content">Content:</label>
+          <textarea id="content" name="content" rows="10" cols="30" required>{{ blog['content'] }}</textarea>
+          <br><br>
+          <button type="submit">Update Blog</button>
+      </form>
+  </body>
 
-<div class="heading">
-  <h2>Make Your Edits Here: </h2>
-  <form action="/page/{{page_id}}">
-    Title:
-    <textarea name="title" rows="1" cols="50">{{title}}</textarea>
-    <br><br>
-    Text:
-    <textarea name="contents" rows="50" cols="50">{{text}}</textarea>
-    <br><br>
-    <input type="submit" value="Submit">
-  </form>
-</div>
-</body>
-
-</html>
+  </html>
