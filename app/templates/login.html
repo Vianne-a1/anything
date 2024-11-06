@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Log In - Blog by Team Anything</title>
+  <title>Log In - Wiki by Team Anything</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
 </head>
 
 <body>
   <header>
-    <h1>Blog by Team Anything</h1>
+    <h1>Wiki By Team Anything</h1>
   </header>
   <nav class="navbar">
       <form action="/">
@@ -31,6 +31,7 @@
     <h2>Log In</h2>
   </div>
   <hr>
+  <br></br>
   <div class="input">
     <h3>Welcome back!</h3>
     <form action="{{ url_for('login') }}" method="post">
@@ -44,8 +45,11 @@
     </form>
     <br>
   </div>
+  <br></br>
   <br>
   <hr>
+  <br></br>
+  <br></br>
   <div class="return">
     <form action="/">
       <button type="submit">Return Home</button>
