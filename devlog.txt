@@ -77,7 +77,7 @@ jessicaY -- 11.3.2024
 jackieZ -- 11.3.2024
 - updated home route in '__init__.py'
 - fix create page leading to page not found
-- updated html files for separate login/signin 
+- updated html files for separate login/signin
 - fixed author not showing in blog page after blog is created
 
 tiffanyY -- 11.3.2024
@@ -97,7 +97,7 @@ claireS -- 11.4.2024
 - edited mypages and editpage
 
 tiffanyY -- 11.4.2024
-- bug tested - 
+- bug tested -
     Major issues: If a space is entered in any form fields, the link is unclickable
 
 jackieZ -- 11.5.2024
@@ -110,8 +110,10 @@ tiffanyY -- 11.6.2024
 - Updated some CSS for some consistency, updated design doc
 
 jessicaY -- 11.6.2024
-- updated blogPage.html, editPage.html, login.html, users_pages.html, login.css, and blogPage.css
+- updated blogPage.html, editPage.html, login.html, users_pages.html, login.css, and blogPage.css, login.css
 - made css more consistent sitewide
+- fixed some of the padding
+- fixed titles
 
 claireS -- 11.6.2024
 - updated users, login, and signup to make format more consistent

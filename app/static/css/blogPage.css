@@ -88,3 +88,9 @@ h2 {
   font-size: 40px;
   margin-top: 5px;
 }
+
+p {
+  padding-top: 10px;
+  font-size: 20px;
+  padding-left: 7px;
+}

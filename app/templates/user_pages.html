@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Log In - Wiki by Team Anything</title>
+  <title>Pages by Users</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/users.css') }}">
 </head>
 
@@ -42,7 +42,8 @@
     Pages by Users
   </div>
   <hr>
-  <body <ul>
+  <body>
+     <ul class = "pages">
     {% for page in pages %}
     <li><a href="{{ url_for('view_blog', page_id=page.id) }}">{{ page.title }}</a></li>
     {% else %}
