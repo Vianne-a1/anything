@@ -4,14 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Log In - Blog by Team Anything</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+  <title>Log In - Wiki by Team Anything</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/users.css') }}">
 </head>
 
 <body>
+  <br></br>
   <header>
-    <h1>Blog By Team Anything</h1>
+    Wiki By Team Anything
   </header>
+  <br></br>
   <nav class="navbar">
     <form action="/">
       <button type="submit" class="button1">Home</button>
@@ -36,8 +38,10 @@
 
     <title>Users</title>
   </head>
-  <h2>Pages by User</h2>
-
+  <div class="middle">
+    Pages by Users
+  </div>
+  <hr>
   <body <ul>
     {% for page in pages %}
     <li><a href="{{ url_for('view_blog', page_id=page.id) }}">{{ page.title }}</a></li>
