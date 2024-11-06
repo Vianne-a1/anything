@@ -114,6 +114,8 @@ jessicaY -- 11.6.2024
 - made css more consistent sitewide
 - fixed some of the padding
 - fixed titles
+- added automatic line breaks
+
 
 claireS -- 11.6.2024
 - updated users, login, and signup to make format more consistent

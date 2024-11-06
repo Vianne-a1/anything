@@ -28,10 +28,11 @@
   </header>
 
   <main>
+    <hr>
     <h2>{{ blog['title'] }}</h2>
     <hr>
     <p><strong>Author:</strong> {{ blog['username'] }}</p><!-- Display author's username -->
-    <p>{{ blog['content'].replace('\n', '<br>') | safe }}</p>
+    <p class="text">{{ blog['content'].replace('\n', '<br>') | safe }}</p>
     <br>
     <form action="{{ url_for('edit_blog', page_id=blog['id']) }}">
       <button type="submit">Edit Blog</button>

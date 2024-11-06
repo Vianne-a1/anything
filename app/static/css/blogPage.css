@@ -94,3 +94,7 @@ p {
   font-size: 20px;
   padding-left: 7px;
 }
+
+.text {
+  word-wrap: break-word;
+}
