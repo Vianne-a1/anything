@@ -44,11 +44,11 @@
     <h1>Create a New Blog</h1>
     <hr>
     <form action="{{ url_for('create_blog') }}" method="post">
-      <label for="title">Title:</label>
+      <label for="title" class="t">Title:</label>
       <input type="text" id="title" name="title" required>
       <br><br>
-      <label for="content">Content:</label>
-      <textarea id="content" name="content" rows="20" cols="50" required></textarea>
+      <label for="content" class="c">Content:</label>
+      <textarea id="content" name="content" rows="10" cols="40" required></textarea>
       <br><br>
       <button type="submit">Create Blog</button>
     </form>

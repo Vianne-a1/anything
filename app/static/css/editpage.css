@@ -87,3 +87,15 @@ h2 {
   font-weight: normal;
   font-size: 40px;
 }
+
+.t {
+  display: block;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.c {
+  display: block;
+  padding-top: 10px;
+  padding-left: 10px;
+}

@@ -94,3 +94,17 @@ h2 {
   font-weight: normal;
   font-size: 40px;
 }
+
+.t {
+  font-family: serif;
+  display: block;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.c {
+  font-family: serif;
+  display: block;
+  padding-top: 10px;
+  padding-left: 10px;
+}
