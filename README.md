@@ -32,7 +32,7 @@ Your team has been contracted to create a web log hosting site, with the followi
 Or
 
 1. Download the zip file and extract it to folder.
-2. Launch the terminal and and navigate to the extracted files by running `cd anything` in ther terminal.
+2. Launch the terminal and and navigate to the extracted files by running `cd anything` in the terminal.
 3. Run `pip install -r requirements.txt` in the terminal.
 
 Launch Codes:
@@ -50,6 +50,6 @@ Make a python virtual environment
 1. Run this project by running `cd anything`
    - If requirements are not installed yet, run `pip install -r requirements.txt`
 2. Run `cd/app`
-3. Run `python3 builddb.py`.
+3. Run `python3 build_db.py`.
 4. Run `python3 '__init__.py'`.
 5. Head to "http://127.0.0.1:5000" or your local host url to view site.
