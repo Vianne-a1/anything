@@ -25,8 +25,8 @@ Your team has been contracted to create a web log hosting site, with the followi
 
 # Install Guide:
 
-1. Clone the repository by running `git clone git@github.com:Vianne-a1/anything.git` in the terminal.
-2. Enter the terminal by running `cd anything` in the terminal.
+1. Clone the repository by running `git clone git@github.com:Vianne-a1/anything.git` or `git clone https://github.com/Vianne-a1/anything.git` in the terminal.
+2. Naviagte to the directory by running `cd anything` in the terminal.
 3. Install everything in requirements.txt by running `pip install -r requirements.txt` in the terminal.
 
 Or
@@ -47,7 +47,7 @@ Make a python virtual environment
 
     4. Run $ deactivate to deactivate the virtual environment
 
-1. Run this project by running `cd anything`
+1. Navigate to the directory by running `cd anything`
    - If requirements are not installed yet, run `pip install -r requirements.txt`
 2. Run `cd/app`
 3. Run `python3 build_db.py`.
