@@ -4,16 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Create New Blog</title>
+  <title>Create New Blog</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/newpage.css') }}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body>
-  <br></br>
   <header>
     Blog By Team Anything
   </header>
-  <br></br>
+
   <nav class="navbar">
     <form action="/">
       <button type="submit" class="button1">Home</button>
@@ -29,28 +29,24 @@
     </form>
   </nav>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}My Blog{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-    <title>Create New Page</title>
-  </head>
-
-  <body>
+  <main>
     <h1>Create a New Blog</h1>
     <hr>
     <form action="{{ url_for('create_blog') }}" method="post">
       <label for="title">Title:</label>
-      <input type="text" id="title" name="title" required>
+      <input type="text" id="title" name="title" maxlength="50" required pattern=".*[a-zA-Z0-9].*"
+        title="Title must contain at least one letter or number." />
+      <small>(Maximum 50 characters)</small>
       <br><br>
+
       <label for="content">Content:</label>
-      <textarea id="content" name="content" rows="10" cols="30" required></textarea>
+      <textarea id="content" name="content" rows="10" cols="30" required pattern=".*[a-zA-Z0-9].*"
+        title="Content must contain at least one letter or number."></textarea>
       <br><br>
+
       <button type="submit">Create Blog</button>
     </form>
-  </body>
+  </main>
+</body>
 
 </html>

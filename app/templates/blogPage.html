@@ -34,9 +34,11 @@
     <p><strong>Author:</strong> {{ blog['username'] }}</p><!-- Display author's username -->
     <p class="text">{{ blog['content'].replace('\n', '<br>') | safe }}</p>
     <br>
-    <form action="{{ url_for('edit_blog', page_id=blog['id']) }}">
+    <form action="{{ url_for('edit_blog', page_id=blog['id']) }}"
+      style="{% if user_id != blog['user_id'] %}display: none;{% endif %}">
       <button type="submit">Edit Blog</button>
     </form>
+
   </main>
 </body>
 

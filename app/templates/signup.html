@@ -3,39 +3,40 @@
 <html>
 
 <head>
-    <title>Sign Up - Blog by Team Anything</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}">
+  <title>Sign Up - Blog by Team Anything</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}">
 </head>
 
 <body>
-    <header>
-        <h1>Blog by Team Anything</h1>
-    </header>
-    <hr>
-    <div class="signup">
-      <h2>Sign Up</h2>
-    </div>
-    <hr>
-    <div class="input">
-      <h3>Welcome!</h3>
-      <form action="{{url_for('signup')}}" method="POST">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <br></br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <br></br>
-        <button type="submit" class="b">Sign Up</button>
-      </form>
-      <br></br>
-    </div>
-    <br></br>
-    <hr>
-    <div class="return">
-      <form action="/">
-        <button type="submit">Return Home</button>
-      </form>
-    </div>
+  <header>
+    <h1>Blog by Team Anything</h1>
+  </header>
+  <hr>
+  <div class="signup">
+    <h2>Sign Up</h2>
+  </div>
+  <hr>
+  <div class="input">
+    <h3>Welcome!</h3>
+    <form action="{{url_for('signup')}}" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required maxlength="30" pattern="^[a-zA-Z0-9]+$"
+        title="Username must be alphanumeric and a maximum of 30 characters.">
+      <br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <br><br>
+      <button type="submit" class="b">Sign Up</button>
+    </form>
+    <br><br>
+  </div>
+  <br><br>
+  <hr>
+  <div class="return">
+    <form action="/">
+      <button type="submit">Return Home</button>
+    </form>
+  </div>
 </body>
 
 </html>

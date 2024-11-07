@@ -18,9 +18,12 @@ def get_db_connection():
 @app.route('/')
 def home():
     conn = get_db_connection()
-    blogs = conn.execute('SELECT blogs.*, users.username FROM blogs JOIN users ON blogs.user_id = users.id').fetchall()
+    blogs = conn.execute(
+        'SELECT blogs.*, users.username FROM blogs JOIN users ON blogs.user_id = users.id'
+    ).fetchall()
     conn.close()
-    username = session.get('username')  # Get the username from the session, if available
+    username = session.get(
+        'username')  # Get the username from the session, if available
     return render_template('home.html', username=username, blogs=blogs)
 
 
@@ -94,25 +97,28 @@ def create_blog():
         flash('Blog created successfully!')
         return redirect(url_for('view_blog', page_id=page_id))
 
-
     return render_template('newPage.html')
 
 
 @app.route('/view_blog/<int:page_id>')
 def view_blog(page_id):
     conn = get_db_connection()
-    blog = conn.execute('''
+    blog = conn.execute(
+        '''
         SELECT blogs.*, users.username
         FROM blogs
         JOIN users ON blogs.user_id = users.id
         WHERE blogs.id = ?
-    ''', (page_id,)).fetchone()
+    ''', (page_id, )).fetchone()
     conn.close()
 
     if blog is None:
         flash('Blog not found.')
         return redirect(url_for('home'))
-    return render_template('blogPage.html', blog=blog)
+
+    return render_template('blogPage.html',
+                           blog=blog,
+                           user_id=session.get('user_id'))
 
 
 @app.route('/<int:page_id>/edit', methods=('GET', 'POST'))
