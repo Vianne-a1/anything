@@ -10,7 +10,7 @@ Jessica Yu, HTML/CSS
 Jackie Zeng, DB + py
 
 
-# Description of website -- Scenario Two: Web Log Hosting Site (DUE DATE 11.06.2024)
+# Description of website -- Scenario Two: Web Log Hosting Site (DUE DATE 11.07.2024)
 
 Your team has been contracted to create a web log hosting site, with the following features:
 
