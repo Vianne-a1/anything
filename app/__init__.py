@@ -1,12 +1,11 @@
-   ### Anything: tiffanyY jackieZ jessicaY claireS
-   ### SoftDev p5
-  ###  Oct/Nov 2024
+### Anything: tiffanyY jackieZ jessicaY claireS
+### SoftDev p5
+###  Oct/Nov 2024
 from flask import Flask, render_template, request, redirect, url_for, session, flash
 import sqlite3
 import os
 from werkzeug.security import generate_password_hash, check_password_hash
 from build_db import setup_database
-
 
 app = Flask(__name__)  # Create instance of class Flask
 
@@ -156,6 +155,11 @@ def edit_blog(page_id):
 
 @app.route('/users')
 def list_users():
+    if 'user_id' not in session:
+        flash("You must be logged in to view the users list.")
+        return redirect(url_for('login'))
+
+    # Fetch and display the users if logged in
     conn = get_db_connection()
     users = conn.execute('SELECT * FROM users').fetchall()
     conn.close()
@@ -164,6 +168,10 @@ def list_users():
 
 @app.route('/pages/<int:user_id>')
 def user_pages(user_id):
+    if 'user_id' not in session:
+        flash("You must be logged in to view user pages.")
+        return redirect(url_for('login'))
+
     conn = get_db_connection()
     pages = conn.execute('SELECT * FROM blogs WHERE user_id = ?',
                          (user_id, )).fetchall()

@@ -5,6 +5,7 @@
     SoftDev p5
     Oct/Nov 2024
 -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,25 +18,25 @@
     <h1>Blog by Team Anything</h1>
   </header>
   <nav class="navbar">
-      <form action="/">
-          <button type="submit" class="button1">Home</button>
-      </form>
-      <form action="/users">
-          <button type="submit" class="button1">Users</button>
-      </form>
-      <form action="/mypages">
-          <button type="submit" class="button1">My Pages</button>
-      </form>
-      <form action="/logout">
-          <button type="submit" class="button">Log Out</button>
-      </form>
+    <form action="/">
+      <button type="submit" class="button1">Home</button>
+    </form>
+    <form action="/users">
+      <button type="submit" class="button1">Users</button>
+    </form>
+    <form action="/mypages">
+      <button type="submit" class="button1">My Pages</button>
+    </form>
+    <form action="/logout">
+      <button type="submit" class="button">Log Out</button>
+    </form>
   </nav>
   <hr>
   <div class="login">
     <h2>Log In</h2>
   </div>
   <hr>
-  <br></br>
+  <br>
   <div class="input">
     <h3>Welcome back!</h3>
     <form action="{{ url_for('login') }}" method="post">
@@ -47,13 +48,12 @@
       <br><br>
       <button type="submit" class="b">Log In</button>
     </form>
-    <br>
+    <br><br>
+    <div>
+      <p>Don't have an account? <a href="{{ url_for('signup') }}">Sign Up</a></p>
+    </div>
   </div>
-  <br></br>
-  <br>
   <hr>
-  <br></br>
-  <br></br>
   <div class="return">
     <form action="/">
       <button type="submit">Return Home</button>
