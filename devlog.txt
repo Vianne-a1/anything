@@ -107,10 +107,13 @@ jackieZ -- 2024-11-6 11:33
 - Updated all html templates so that wiki is replaced with blog
 
 tiffanyY -- 2024-11-6 11:41
-- Updated some CSS for some consistency, updated design doc
+- Updated some CSS for some consistency 
+- Udated design doc
 - Updated requirements-txt to reduce clutter
 - Updated editPage, newPage, and signup with character limits and alphanumerical restrictions
 - Updated readme
+- Fixed login (to view user list)
+- Added headings to all files
 
 jessicaY -- 2024-11-6 11:52
 - updated blogPage-html, editPage-html, login-html, users_pages-html, login-css, and blogPage-css, login-css
