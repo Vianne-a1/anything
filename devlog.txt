@@ -110,6 +110,7 @@ tiffanyY -- 11.6.2024
 - Updated some CSS for some consistency, updated design doc
 - Updated requirements.txt to reduce clutter
 - Updated editPage, newPage, and signup with character limits and alphanumerical restrictions
+- Updated readme
 
 jessicaY -- 11.6.2024
 - updated blogPage.html, editPage.html, login.html, users_pages.html, login.css, and blogPage.css, login.css
