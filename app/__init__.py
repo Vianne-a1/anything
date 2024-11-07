@@ -1,8 +1,12 @@
+   ### Anything: tiffanyY jackieZ jessicaY claireS
+   ### SoftDev p5
+  ###  Oct/Nov 2024
 from flask import Flask, render_template, request, redirect, url_for, session, flash
 import sqlite3
 import os
 from werkzeug.security import generate_password_hash, check_password_hash
 from build_db import setup_database
+
 
 app = Flask(__name__)  # Create instance of class Flask
 
