@@ -108,7 +108,10 @@ jackieZ -- 2024-11-6 11:33
 
 tiffanyY -- 2024-11-6 11:41
 - Updated some CSS for some consistency 
-- Udated design doc
+- Updated design doc (removed search, User list dropdown (ranged alphabetically), and past versions)
+    - Updated graphs/charts
+    - Updated routes and site map
+- Viewing past versions
 - Updated requirements-txt to reduce clutter
 - Updated editPage, newPage, and signup with character limits and alphanumerical restrictions
 - Updated readme
