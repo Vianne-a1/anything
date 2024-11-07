@@ -1,124 +1,124 @@
-Team Anything -- 10.24
+Team Anything -- 2024-10-24 22:30
 
 - Drafted the design document
 
-tiffanyY and jackieZ -- 10.27.2024
+tiffanyY and jackieZ -- 2024-10-27 20:24
 
 - Edited design document with feedback from other groups
 
-tiffanyY -- 10.28.2024
+tiffanyY -- 2024-10-28 18:42
 
 - Updated database format and added another graph/chart for routes
 - Included Database types
 
-jackieZ -- 10.29.2024
+jackieZ -- 2024-10-29 11:38
 
 - Started create python file for creating db
-- Started forms.py
+- Started forms-py
 
-jessicaY -- 10.29.2024
+jessicaY -- 2024-10-29 11:42
 
-- Updated requirements.txt
+- Updated requirements-txt
 
-tiffanyY -- 10.29.2024
+tiffanyY -- 2024-10-29 11:50
 
 - Added launch and installation code
 
-claireS -- 10.29.2024
+claireS -- 2024-10-29 11:52
 
 - Wrote the launch codes and install guide in readme
 
-jackieZ -- 10.30.2024
+jackieZ -- 2024-10-30 20:17
 
 - Finished db maker
-- Wrote signup, login, logout methods in init.py
-- Fix missing app.run()
-- Fixed minor errors, missing app= , and using os.random instead of os.urandom
+- Wrote signup, login, logout methods in init-py
+- Fix missing app-run()
+- Fixed minor errors, missing app= , and using os-random instead of os-urandom
 
-tiffanyY -- 10.30.2024
+tiffanyY -- 2024-10-30 21:11
 
-- Added create, edit, and view blog in __init_.py
-- Updated README.md with due date and actual project description
+- Added create, edit, and view blog in __init_-py
+- Updated README-md with due date and actual project description
 
-Team Anything -- 10.30.2024
+Team Anything -- 2024-10-31 1:28
 
 devlog entry summarizing external readme review:
 
-The install/launch instructions did their job but it could've been a lot more clear and specific. Our reviewer had some difficulty due to occassionally missing a step (like cd-ing into the folder/directory).
+The install/launch instructions did their job but it could've been a lot more clear and specific- Our reviewer had some difficulty due to occassionally missing a step (like cd-ing into the folder/directory)-
 
-Other groups were much more thorough with their readme and install/launch instructions. Most had much more specific intructions that consisted of listed and ordered information on how to install or launch. Some groups had commands in code blocks, something that would've made the installation/launch process much more convienent. There were a few groups who gave more general instructions that could be applied to other repositories and not limited to this specific project.
+Other groups were much more thorough with their readme and install/launch instructions- Most had much more specific intructions that consisted of listed and ordered information on how to install or launch- Some groups had commands in code blocks, something that would've made the installation/launch process much more convienent- There were a few groups who gave more general instructions that could be applied to other repositories and not limited to this specific project-
 
-jessicaY -- 10.31.2024
-- Updated readme.me based on notes from emissary visit
+jessicaY -- 2024-10-31 11:20
+- Updated readme-me based on notes from emissary visit
 
-tiffanyY -- 10.31.2024
+tiffanyY -- 2024-10-31 11:32
 
-- Updated readme.md to better comply with written standards
+- Updated readme-md to better comply with written standards
 - Made html placeholder files
 - Reordered/reformatted some files
-- Ensured that the app (__init__.py) worked properly and site was accessible
-- Added a temporary style.css (It's from annual CS sem 2 from intro to HTML/CSS - Duck site)
+- Ensured that the app (__init__-py) worked properly and site was accessible
+- Added a temporary style-css (It's from annual CS sem 2 from intro to HTML/CSS - Duck site)
 
-jessicaY -- 11.2.2024
--- worked on home.html
--- finished login.html and signup.html(?)
--- updated html files after initial testing
+jessicaY -- 2024-11-2 11:49
+- worked on home-html
+- finished login-html and signup-html(?)
+- updated html files after initial testing
 
-tiffanyY -- 11.2.2024
+tiffanyY -- 2024-11-2 16:53
 - tested new html and edited as necessary
 
-claireS -- 11.2.2024
-- worked on newpage.html, editpage.html, and blogpage.html
+claireS -- 2024-11-2 18:54
+- worked on newpage-html, editpage-html, and blogpage-html
 
-jessicaY -- 11.3.2024
+jessicaY -- 2024-11-3 19:34
 - edited signup and login (html and css files) to make each page consistent
-- created my_pages.css and users.css
+- created my_pages-css and users-css
 
-jackieZ -- 11.3.2024
-- updated home route in '__init__.py'
+jackieZ -- 2024-11-3 11:41
+- updated home route in '__init__-py'
 - fix create page leading to page not found
 - updated html files for separate login/signin
 - fixed author not showing in blog page after blog is created
 
-tiffanyY -- 11.3.2024
-- Added user.html and my_pages.html
+tiffanyY -- 2024-11-3 21:44
+- Added user-html and my_pages-html
 - Fixed a few other HTML files (signup, login, my page, create_new works)
 - Edited a few CSS files to make design consistent
-- Added a few python scripts to '__init__.py' so that the above works
+- Added a few python scripts to '__init__-py' so that the above works
 - Added a new home page message if already logged in
 - Updated readme with a missing launch step
-- Added user_pages.html
+- Added user_pages-html
 - Site now fully functional
 
-jessicaY -- 11.4.2024
--- updated newpage, user, and mypages (html and css files)
+jessicaY -- 2024-11-4 11:25
+- updated newpage, user, and mypages (html and css files)
 
-claireS -- 11.4.2024
+claireS -- 2024-11-4 11:31
 - edited mypages and editpage
 
-tiffanyY -- 11.4.2024
+tiffanyY -- 2024-11-4 11:51
 - bug tested -
     Major issues: If a space is entered in any form fields, the link is unclickable
 
-jackieZ -- 11.5.2024
-- Updated blogPage.html so it accurately reflects if there should be new line
+jackieZ -- 2024-11-5 20:13
+- Updated blogPage-html so it accurately reflects if there should be new line
 
-jackieZ --11.6.2024
+jackieZ -- 2024-11-6 11:33
 - Updated all html templates so that wiki is replaced with blog
 
-tiffanyY -- 11.6.2024
+tiffanyY -- 2024-11-6 11:41
 - Updated some CSS for some consistency, updated design doc
-- Updated requirements.txt to reduce clutter
+- Updated requirements-txt to reduce clutter
 - Updated editPage, newPage, and signup with character limits and alphanumerical restrictions
 - Updated readme
 
-jessicaY -- 11.6.2024
-- updated blogPage.html, editPage.html, login.html, users_pages.html, login.css, and blogPage.css, login.css
+jessicaY -- 2024-11-6 11:52
+- updated blogPage-html, editPage-html, login-html, users_pages-html, login-css, and blogPage-css, login-css
 - made css more consistent sitewide
 - fixed some of the padding
 - fixed titles
 - added automatic line breaks
 
 
-claireS -- 11.6.2024
+claireS -- 2024-11-6 11:53
 - updated users, login, and signup to make format more consistent
