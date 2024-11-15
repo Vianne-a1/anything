@@ -5,6 +5,7 @@
     SoftDev p5
     Oct/Nov 2024
 -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,42 +14,42 @@
 </head>
 
 <body>
-<br></br>
-<header>
-    Blog by Team Anything
-</header>
-<br></br>
-<nav class="navbar">
-    <form action="/">
-        <button type="submit" class="button1">Home</button>
-    </form>
-    <form action="/users">
-        <button type="submit" class="button1">Users</button>
-    </form>
-    <form action="/mypages">
-        <button type="submit" class="button1">My Pages</button>
-    </form>
-    <form action="/logout">
-        <button type="submit" class="button">Log Out</button>
-    </form>
-</nav>
-  <hr>
+    <br></br>
+    <header>
+        <h1>Blog by Team Anything</h1>
+    </header>
+    <br></br>
+    <nav class="navbar">
+        <form action="/">
+            <button type="submit" class="button1">Home</button>
+        </form>
+        <form action="/users">
+            <button type="submit" class="button1">Users</button>
+        </form>
+        <form action="/mypages">
+            <button type="submit" class="button1">My Pages</button>
+        </form>
+        <form action="/logout">
+            <button type="submit" class="button">Log Out</button>
+        </form>
+    </nav>
+    <hr>
     <div class="middle">
         My Blog
     </div>
     <hr>
     <a href="{{ url_for('create_blog') }}">New Page</a>
-    <h1>My Pages</h1>
-    <ul>
-        {% for page in pages %}
-        <li>
-            <a href="{{ url_for('view_blog', page_id=page.id) }}">{{ page.title }}</a>
-        </li>
-        {% else %}
-        <li>No pages found.</li>
-        {% endfor %}
-    </ul>
-    <a href="{{ url_for('home') }}">Back to Home</a>
+    <h2>My Pages</h1>
+        <ul>
+            {% for page in pages %}
+            <li>
+                <a href="{{ url_for('view_blog', page_id=page.id) }}">{{ page.title }}</a>
+            </li>
+            {% else %}
+            <li>No pages found.</li>
+            {% endfor %}
+        </ul>
+        <a href="{{ url_for('home') }}">Back to Home</a>
 </body>
 
 </html>
